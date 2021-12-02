@@ -1,13 +1,22 @@
 import React from 'react'
-import { View, Text } from 'react-native';
+import { ScrollView, Text, StyleSheet } from 'react-native';
 import List from './components/List';
+
+const styles = StyleSheet.create ({
+  container: {
+    margin: 40,
+    textAlign: 'center',
+    fontSize: 30,
+    fontWeight: '900'
+  }
+})
 
 const App = () => {
   return (
-    <View>
-      <Text>Hello</Text>
+    <ScrollView>
+      <Text style={styles.container}>Countries</Text>
       <List />
-    </View>
+    </ScrollView>
   );
 };
 
